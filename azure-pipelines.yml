@@ -34,7 +34,7 @@ steps:
 - task: DotNetCoreCLI@2
   displayName: Test
   inputs:
-    command: 'Test'
+    command: 'test'
     arguments: '--configuration $(BuildConfiguration) --collect:"Code Coverage"'
     projects: 'tests/ToDo.Tests/ToDo.Tests.csproj'
 
